@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Addington CF', serif;
+}
+
+.tack {
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 3.5vw;
+    padding-top: 300px;
+    color: #7e9c80;
+}

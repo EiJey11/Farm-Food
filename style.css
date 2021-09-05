@@ -1,0 +1,510 @@
+
+/*************************************************
+Huvudstilar
+**************************************************/
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+    color: #39513b;
+	font-family: KoHo;
+}
+
+h2 {
+    color: #39513b;
+}
+
+h3 {
+    color: #39513b;
+}
+
+h4 {
+	color: #39513b;
+}
+
+a {
+    color: #39513b;
+}
+
+body {
+	background-color: #fff;
+	color: #577480;
+	font-family: 'Koho';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+html,body {
+	margin:0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 4%;
+}
+
+/*************************************************
+Header
+**************************************************/
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo_header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-image {
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: auto;
+	margin-left: 15px;
+	margin-top: 25px;
+}
+
+.logo-text {
+    font-weight: 700;
+    color: #79AF60;
+	float: left;
+    padding-top: 10px;
+	margin-left: 15px;
+}
+
+.logo-text a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #79AF60;
+	letter-spacing: 6px;
+	padding: 30px;
+	opacity: none;
+}
+
+.logo-text a:hover {
+	color: #549237;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+}
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 35px;
+	padding-left: 25px;
+	list-style: none;
+}
+
+.menu ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.menu li {
+	font-size: 0.9em;
+}
+
+.menu li a {
+	text-decoration: none;
+	padding-right: 25px;
+}
+
+.menu li a:link,
+.menu li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #79AF60;
+    font-weight: 600;
+	padding: 10px;
+}
+
+.menu li a:hover,
+.menu li a:active {
+	color:#549237;
+	opacity: 1;
+}
+
+#header-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    background-image: url(img/holding.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+#header-text #header-title {
+	display: flex;
+	position: absolute;
+	right: 150px;
+	top: 250px;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 0.17em;
+	font-size: 4.5vw;
+	line-height: 4.0vw;
+	color: #637c63;
+	font-style: normal;
+}
+
+/*************************************************
+Om oss
+**************************************************/
+#om_oss {
+	display: flex;
+	flex-direction: column;
+	padding-top: 35px;
+}
+
+.om_oss_box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.col-6 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-6 img {
+    display: flex;
+	align-content: center;
+	width:100%;
+	padding: 10px 0;
+}
+
+h2 {
+    color: #39513b;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 85px;
+	padding-left: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h3 {
+	padding-top: 30px;
+	padding-left: 25px;
+}
+
+p {
+	padding: 15px 0 15px 25px;
+}
+
+ul {
+	list-style: none;
+	padding: 10px 0 15px 25px;
+}
+
+/*************************************************
+produkter
+**************************************************/
+
+#produkter {
+	display: flex;
+	flex-direction: column;
+}
+
+.produkter_box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.col-8 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-4 img {
+    display: flex;
+	align-items:center;
+	width:100%;
+}
+
+.col-4 {
+
+	padding: 30px 35px;
+}
+
+.produkter-name {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.col-4 a {
+	text-decoration: none;
+	font-weight: 700;
+	color:#549237;
+	padding-top: 10px;
+}
+
+.col-4 a:hover {
+	text-decoration: none;
+	font-weight: 700;
+	color:#7e9c80;
+	padding-top: 10px;
+
+}
+
+.erfarenhet ul {
+	list-style: none;
+	padding: 10px 0px;
+}
+.interessen h4 {
+	padding: 35px 0px 10px 0;
+}
+
+/*************************************************
+Personal
+**************************************************/
+#person {
+	display: flex;
+	flex-direction: column;
+}
+.person_box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.col-3 img {
+	width:100%;
+}
+
+.person-name {
+	text-align: center;
+	font-size: 100%;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+.person-info {
+	font-weight: 300;
+	font-size: 100%;
+	text-align: center;
+}
+
+/*************************************************
+Kontakt förmular
+**************************************************/
+
+#contact-form-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	padding-top: 35px;
+}
+
+.form-row .float-clearing {
+
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
+}
+
+#contact-form {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 75%;
+}
+
+
+input[type=submit]{
+	display: flex;
+	align-content:center;
+	padding: 15px 25px;
+	text-decoration: none;
+	border: 0.4px solid #549237;
+	background-color: #ffffff;
+	color: #7e9c80;
+	font-size: 0.9em;
+	border-radius: 7px;
+	transition: background-color 1.3s, border 1.3s;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+	display: flex;
+	align-content: center;
+	padding: 15px 25px;
+	text-decoration: none;
+	border: 1px solid #fdfcfc;
+	background-color: #7e9c80;
+	color: #fff;
+	font-size: 0.9em;
+	border-radius: 7px;
+	transition: background-color 1.3s, border 1.3s;
+}
+
+input[type=text],
+input[type=Email],
+select, 
+textarea {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding:15px 35px;
+	border-radius: 2px;
+	border: 0.1px solid #cde2ce;
+}
+
+textarea {
+	height: 150px;
+}
+
+
+/*************************************************
+Footer
+**************************************************/
+
+footer {
+	text-align: center;
+	padding: 60px 0;
+	background-color: #78AE60;
+}
+footer p {
+	font-size: 95%;
+}
+
+#footer-nav {
+	margin-bottom: 20px;
+}
+
+#footer-nav li {
+	list-style: none;
+	color: #fff;
+	padding: 5px;
+}
+
+#footer-nav li {
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 0.9em;
+	color: #fff;
+}
+
+#footer-nav li a:link,
+#footer-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px;
+	opacity: 0.9;
+	font-size: 90%;
+}
+
+#footer-nav li a:hover,
+#footer-nav li a:active {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#3f5541;
+	padding: 10px;
+	opacity: 0.9;
+	font-size: 90%;
+}
+
+#footer-social-links {
+	list-style: none;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	font-size: 64px;
+}
+
+#footer-social-links li {
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 0.9em;
+	color: #fff;
+}
+
+#footer-social-links li a:link,
+#footer-social-links li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 15px;
+	opacity: 0.7;
+	font-size: 80%;
+}
+
+#footer-social-links li a:hover,
+#footer-social-links li a:active {
+opacity: 1;
+}
+
+#footer-text {
+	font-style: normal;
+	padding-top: 20px;
+	color: #fff;
+	opacity: 0.8;
+	font-size: 80%;
+}
+
+/*************************************************
+Media Queries
+**************************************************/
+
+@media only screen and (max-width: 1354px) {
+	
+	[class*="col-"] {
+	  width: 100%;
+	}
+  }
+
+
+
+  /***********************************************************************************************/
+
+  
